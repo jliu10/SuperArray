@@ -11,7 +11,7 @@ public class SuperArray{
   }
 
   public boolean add(String element){
-//    if(size+1>10) return false;
+    if(size==10) return false;
     size++;
     String[] oldData=data;
     data=new String[size];
@@ -21,28 +21,22 @@ public class SuperArray{
     data[size-1]=element;
     return true;
   }
+
+  public String get(int index){
+    if(index>size-1) return "Index "+index+" out of bounds";
+    return data[index];
+  }
+
 }
 /*
-  e)
-  public String get(int index)
-  -Returns the element at the specified position in this list. [For Now Assume the index is 0 to size-1]
-
   f)
   public String set(int index, String element)
-  -Replaces the element at the specified position in this list with the specified element. Return the value you replaced. [Assume the index is 0 to size-1] note: This is not to add new values, it is only to replace old ones.
-  __________________________________________________
 
   g)
   private void resize()
-  -Increase the capacity by :
-  creating a larger array
-  copy the values from the original array to the new one.
-  assign the new one to the instance variable.
 
   Modify part d)
   public boolean add(String element)
-  -Appends the specified element to the end of this list.
-  -When the capacity is full, resize before adding.
 
   ___________________________________________________
   Example usage:
