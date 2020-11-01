@@ -23,15 +23,17 @@ public class SuperArray{
   }
 
   public String get(int index){
-    if(index>size-1) return "Index "+index+" out of bounds";
+    if(index>size-1) return "Index "+index+" is out of bounds";
     return data[index];
   }
 
-}
+  public String set(int index, String element){
+    if(index>size-1) return "Index "+index+" is out of bounds";
+    String old=get(index);
+    data[index]=element;
+    return old;
+  }
 /*
-  f)
-  public String set(int index, String element)
-
   g)
   private void resize()
 
@@ -47,3 +49,4 @@ public class SuperArray{
   for(int i = 0; i < words.size(); i++){
     System.out.println( words.get(i) );
 */
+}
