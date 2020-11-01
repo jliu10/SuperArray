@@ -2,19 +2,27 @@ public class SuperArray{
   private String [] data;
   private int size; //The current size
   public SuperArray(){
-    data=new String[10];
+    data=new String[0];
     size=0;
   }
 
   public int size(){
     return size;
   }
+
+  public boolean add(String element){
+//    if(size+1>10) return false;
+    size++;
+    String[] oldData=data;
+    data=new String[size];
+    for(int i=0;i<size-1;i++){
+      data[i]=oldData[i];
+    }
+    data[size-1]=element;
+    return true;
+  }
 }
 /*
-  d)
-  public boolean add(String element)
-  -Appends the specified element to the end of this list.
-
   e)
   public String get(int index)
   -Returns the element at the specified position in this list. [For Now Assume the index is 0 to size-1]
