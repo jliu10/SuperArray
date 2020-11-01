@@ -8,5 +8,9 @@ public class Tester{
     System.out.println(words.size());
     System.out.println(words.get(0));
     System.out.println(words.get(1));
+    System.out.println(words.set(1,"pea"));
+    System.out.println(words.set(0,"pea"));
+    System.out.println(words.size());
+    System.out.println(words.get(0));
   }
 }
