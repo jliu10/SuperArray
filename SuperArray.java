@@ -2,7 +2,7 @@ public class SuperArray{
   private String [] data;
   private int size; //The current size
   public SuperArray(){
-    data=new String[0];
+    data=new String[10];
     size=0;
   }
 
@@ -11,7 +11,7 @@ public class SuperArray{
   }
 
   public boolean add(String element){
-    //Would resizing increase the size of the data array?
+    if(size==10) resize();
     size++;
     String[] oldData=data;
     data=new String[size];
@@ -36,13 +36,10 @@ public class SuperArray{
 
   private void resize(){
     String[] newData=new String[size+10];
-    if(size>0){
-      for(int i=0;i<size;i++){
-        newData[i]=data[i];
-      }
+    for(int i=0;i<size;i++){
+      newData[i]=data[i];
     }
     data=newData;
-    size+=10;
   }
 /*
   ___________________________________________________
