@@ -11,7 +11,6 @@ public class SuperArray{
   }
 
   public boolean add(String element){
-    if(size==10) return false;
     size++;
     String[] oldData=data;
     data=new String[size];
@@ -33,10 +32,18 @@ public class SuperArray{
     data[index]=element;
     return old;
   }
-/*
-  g)
-  private void resize()
 
+  private void resize(){
+    String[] newData=new String[size+10];
+    if(size>0){
+      for(int i=0;i<size;i++){
+        newData[i]=data[i];
+      }
+    }
+    data=newData;
+    size+=10;
+  }
+/*
   Modify part d)
   public boolean add(String element)
 
