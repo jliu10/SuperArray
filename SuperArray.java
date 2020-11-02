@@ -11,6 +11,7 @@ public class SuperArray{
   }
 
   public boolean add(String element){
+    //Would resizing increase the size of the data array?
     size++;
     String[] oldData=data;
     data=new String[size];
@@ -22,12 +23,12 @@ public class SuperArray{
   }
 
   public String get(int index){
-    if(index>size-1) return "Index "+index+" is out of bounds";
+    if(index>=size) return "Index "+index+" is out of bounds";
     return data[index];
   }
 
   public String set(int index, String element){
-    if(index>size-1) return "Index "+index+" is out of bounds";
+    if(index>=size) return "Index "+index+" is out of bounds";
     String old=get(index);
     data[index]=element;
     return old;
@@ -44,9 +45,6 @@ public class SuperArray{
     size+=10;
   }
 /*
-  Modify part d)
-  public boolean add(String element)
-
   ___________________________________________________
   Example usage:
   SuperArray words = new SuperArray();
