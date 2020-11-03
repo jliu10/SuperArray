@@ -1,6 +1,7 @@
 public class Tester{
   public static void main(String[] args){
     SuperArray words = new SuperArray();
+    words = new SuperArray(9);
     System.out.println(words);
     System.out.println(words.size());
     System.out.println(words.isEmpty());
