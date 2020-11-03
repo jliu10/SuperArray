@@ -37,5 +37,7 @@ public class Tester{
     System.out.println(words.add("dec"));
     System.out.println(words.size());
     System.out.println(words.toString());
+    System.out.println(words.contains("jul"));
+    System.out.println(words.contains("wow"));
   }
 }
