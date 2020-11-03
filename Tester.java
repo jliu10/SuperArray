@@ -46,15 +46,23 @@ public class Tester{
     System.out.println(words);
     words.add(words.size(),"cow");
     System.out.println(words);
+    System.out.println(words.indexOf("cow"));
+    System.out.println(words.indexOf("chungus"));
     System.out.println(words.add("cow"));
     System.out.println(words);
+    System.out.println(words.size());
     System.out.println(words.remove(0));
     System.out.println(words);
+    System.out.println(words.size());
     System.out.println(words.remove(words.size()-1));
     System.out.println(words);
+    System.out.println(words.size());
     System.out.println(words.remove(words.size()-1));
     System.out.println(words);
+    System.out.println(words.size());
     System.out.println(words.remove(1));
     System.out.println(words);
+    System.out.println(words.size());
+    System.out.println(words.indexOf("dec"));
   }
 }
