@@ -41,14 +41,9 @@ public class SuperArray{
     }
     data=newData;
   }
-/*
-  ___________________________________________________
-  Example usage:
-  SuperArray words = new SuperArray();
-  words.add("kani");
-  words.add("uni");
-  words.add("ebi");
-  for(int i = 0; i < words.size(); i++){
-    System.out.println( words.get(i) );
-*/
+
+  public boolean isEmpty(){
+    return size==0;
+  }
+
 }
