@@ -3,11 +3,12 @@ public class Tester{
     SuperArray words = new SuperArray();
     System.out.println(words);
     System.out.println(words.size());
-//    System.out.println(words.get(0));
+    System.out.println(words.isEmpty());
     System.out.println(words.add("jan"));
     System.out.println(words.size());
     System.out.println(words.add("feb"));
     System.out.println(words.size());
+    System.out.println(words.isEmpty());
     System.out.println(words.get(0));
     System.out.println(words.get(1));
     System.out.println(words.get(2));
