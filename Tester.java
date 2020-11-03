@@ -48,5 +48,13 @@ public class Tester{
     System.out.println(words);
     System.out.println(words.add("cow"));
     System.out.println(words);
+    System.out.println(words.remove(0));
+    System.out.println(words);
+    System.out.println(words.remove(words.size()-1));
+    System.out.println(words);
+    System.out.println(words.remove(words.size()-1));
+    System.out.println(words);
+    System.out.println(words.remove(1));
+    System.out.println(words);
   }
 }
