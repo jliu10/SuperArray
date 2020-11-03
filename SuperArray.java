@@ -51,4 +51,14 @@ public class SuperArray{
     size=0;
   }
 
+  public String toString(){
+    if(size==0) return "[]";
+    String result="[";
+    for(int i=0;i<size-1;i++){
+      result+=data[i]+", ";
+    }
+    result+=data[size-1]+"]";
+    return result;
+  }
+
 }
