@@ -19,7 +19,7 @@ public class SuperArray{
     if(size==data.length) resize();
     size++;
     String[] oldData=data;
-    data=new String[size];
+    data=new String[data.length];
     for(int i=0;i<size-1;i++){
       data[i]=oldData[i];
     }
@@ -28,7 +28,17 @@ public class SuperArray{
   }
 
   public void add(int index, String element){
-
+    if(size==data.length) resize();
+    String[] oldData=data;
+    data=new String[data.length];
+    for(int i=0;i<index;i++){
+      data[i]=oldData[i];
+    }
+    data[index]=element;
+    for(int i=index;i<size;i++){
+      data[i+1]=oldData[i];
+    }
+    size++;
   }
 
   public String get(int index){
