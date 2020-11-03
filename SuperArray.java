@@ -17,13 +17,13 @@ public class SuperArray{
 
   public boolean add(String element){
     if(size==data.length) resize();
-    size++;
     String[] oldData=data;
     data=new String[data.length];
-    for(int i=0;i<size-1;i++){
+    for(int i=0;i<size;i++){
       data[i]=oldData[i];
     }
-    data[size-1]=element;
+    data[size]=element;
+    size++;
     return true;
   }
 
