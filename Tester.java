@@ -40,5 +40,13 @@ public class Tester{
     System.out.println(words.toString());
     System.out.println(words.contains("jul"));
     System.out.println(words.contains("wow"));
+    words.add(1,"cow");
+    System.out.println(words);
+    words.add(0,"cow");
+    System.out.println(words);
+    words.add(words.size(),"cow");
+    System.out.println(words);
+    System.out.println(words.add("cow"));
+    System.out.println(words);
   }
 }
