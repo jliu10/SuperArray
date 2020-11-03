@@ -102,4 +102,12 @@ public class SuperArray{
     return false;
   }
 
+  public int indexOf(String s){
+    if(size==0) return -1;
+    for(int i=0;i<size;i++){
+      if(data[i]==s) return i;
+    }
+    return -1;
+  }
+
 }
