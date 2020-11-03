@@ -41,13 +41,19 @@ public class SuperArray{
     size++;
   }
 
+  public String remove(int index){
+    String old=data[index];
+
+    return old;
+  }
+
   public String get(int index){
-    if(index>=size) return "Index "+index+" is out of bounds";
+    //if(index>=size) return "Index "+index+" is out of bounds";
     return data[index];
   }
 
   public String set(int index, String element){
-    if(index>=size) return "Index "+index+" is out of bounds";
+    //if(index>=size) return "Index "+index+" is out of bounds";
     String old=get(index);
     data[index]=element;
     return old;
