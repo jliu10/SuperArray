@@ -110,4 +110,13 @@ public class SuperArray{
     return -1;
   }
 
+  public String[] toArray(){
+    String[] copy=new String[size];
+    if(size==0) return copy;
+    for(int i=0;i<size;i++){
+      copy[i]=data[i];
+    }
+    return copy;
+  }
+
 }
