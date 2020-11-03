@@ -64,5 +64,8 @@ public class Tester{
     System.out.println(words);
     System.out.println(words.size());
     System.out.println(words.indexOf("dec"));
+    System.out.println(words.toArray()[0]);
+    System.out.println(words.toArray()[11]);
+    System.out.println(words.toArray()[12]);
   }
 }
