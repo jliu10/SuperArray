@@ -106,6 +106,15 @@ public class SuperArray{
     return -1;
   }
 
+  public int lastIndexOf(String value){
+    if(contains(value)){
+      for(int i=size-1;i>=0;i--){
+        if(data[i].equals(value)) return i;
+      }
+    }
+    return -1;
+  }
+
   public String[] toArray(){
     String[] copy=new String[size];
     if(size==0) return copy;
@@ -114,5 +123,7 @@ public class SuperArray{
     }
     return copy;
   }
+
+  //public boolean equals(SuperArray other){ }
 
 }
