@@ -48,7 +48,7 @@ public class SuperArray{
     for(int i=0;i<index;i++){
       data[i]=oldData[i];
     }
-    for(int i=index;i<size;i++){
+    for(int i=index;i<size-1;i++){
       data[i]=oldData[i+1];
     }
     size--;
