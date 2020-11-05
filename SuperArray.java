@@ -97,7 +97,7 @@ public class SuperArray{
   public boolean contains(String s){
     if(size==0) return false;
     for(int i=0;i<size;i++){
-      if(data[i]==s) return true;
+      if(data[i].equals(s)) return true;
     }
     return false;
   }
