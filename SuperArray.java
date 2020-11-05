@@ -44,7 +44,7 @@ public class SuperArray{
   public String remove(int index){
     String old=data[index];
     String[] oldData=data;
-    data=new String[data.length];
+    data=new String[oldData.length];
     for(int i=0;i<index;i++){
       data[i]=oldData[i];
     }
@@ -105,7 +105,7 @@ public class SuperArray{
   public int indexOf(String s){
     if(size==0) return -1;
     for(int i=0;i<size;i++){
-      if(data[i]==s) return i;
+      if(data[i].equals(s)) return i;
     }
     return -1;
   }
