@@ -2,6 +2,7 @@ public class Tester{
   public static void main(String[] args){
     SuperArray words = new SuperArray();
     words = new SuperArray(9);
+    SuperArray poop = new SuperArray(1);
     System.out.println(words);
     System.out.println(words.size());
     System.out.println(words.isEmpty());
@@ -46,8 +47,10 @@ public class Tester{
     System.out.println(words);
     words.add(words.size(),"cow");
     System.out.println(words);
-    System.out.println(words.indexOf("cow"));
+    System.out.println("Index of cow is "+words.indexOf("cow"));
+    System.out.println("Last index of cow is "+words.lastIndexOf("cow"));
     System.out.println(words.indexOf("chungus"));
+    System.out.println(words.lastIndexOf("chungus"));
     System.out.println(words.add("cow"));
     System.out.println(words);
     System.out.println(words.size());
@@ -66,6 +69,19 @@ public class Tester{
     System.out.println(words.indexOf("dec"));
     System.out.println(words.toArray()[0]);
     System.out.println(words.toArray()[11]);
-    System.out.println(words.toArray()[12]);
+    System.out.println(poop);
+    poop.add("tse");
+    poop.add("fee");
+    System.out.println(poop);
+    poop.remove(0);
+    System.out.println(poop);
+    poop.add("tse");
+    System.out.println(poop);
+    poop.remove(1);
+    System.out.println(poop);
+    System.out.println("Last index of fee is "+poop.lastIndexOf("fee"));
+    poop.remove(0);
+    System.out.println(poop);
+    System.out.println("Last index of fee is "+poop.lastIndexOf("fee"));
   }
 }
