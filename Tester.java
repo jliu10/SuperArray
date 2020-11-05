@@ -3,6 +3,9 @@ public class Tester{
     SuperArray words = new SuperArray();
     words = new SuperArray(9);
     SuperArray poop = new SuperArray(1);
+    SuperArray tse = new SuperArray(3);
+    tse.add("tse");
+
     System.out.println(words);
     System.out.println(words.size());
     System.out.println(words.isEmpty());
@@ -83,5 +86,11 @@ public class Tester{
     poop.remove(0);
     System.out.println(poop);
     System.out.println("Last index of fee is "+poop.lastIndexOf("fee"));
+    poop.add("tse");
+    System.out.println(poop);
+    System.out.println(poop);
+    System.out.println(words.equals(poop));
+    System.out.println(words.equals(words));
+    System.out.println(poop.equals(tse));
   }
 }
