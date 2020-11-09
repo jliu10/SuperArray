@@ -32,6 +32,10 @@ public class SuperArray{
   }
 
   public void add(int index, String element){
+    if(index<0 || index>size){
+      throw new IndexOutOfBoundsException("Index "+index+
+      " is out of bounds");
+    }
     if(size==data.length) resize();
     String[] oldData=data;
     data=new String[data.length];
