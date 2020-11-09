@@ -50,6 +50,10 @@ public class SuperArray{
   }
 
   public String remove(int index){
+    if(index<0 || index>=size){
+      throw new IndexOutOfBoundsException("Index "+index+
+      " is out of bounds");
+    }
     String old=data[index];
     String[] oldData=data;
     data=new String[oldData.length];
